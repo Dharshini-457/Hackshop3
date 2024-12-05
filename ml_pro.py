@@ -1,5 +1,5 @@
 import streamlit as st
-import nltk
+
 from nltk.sentiment import SentimentIntensityAnalyzer as sia 
 def score(text):
     score=sia.polarity_scores(text)
