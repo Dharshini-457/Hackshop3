@@ -4,11 +4,11 @@ nltk.download('vader_lexicon')
 from nltk.tokenize import word_tokenize
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 analyzer= SentimentIntensityAnalyzer()
-text = word_tokenize("NLTK is a great library for text processing!")
-text=(str(text))
-print(text)
+text=st.text_input("Enter a text to analysis...")
+st.write(text)
+
 sentiment_scores = analyzer.polarity_scores(text)
-print(sentiment_scores)
+st.write(sentiment_scores)
 
 
 
